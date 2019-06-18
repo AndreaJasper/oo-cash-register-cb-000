@@ -16,5 +16,9 @@ class CashRegister
 
   def add_item(item, price)
 
+    def cash_register
+      cash_register.total = 100
+    end
+
   end
 end
