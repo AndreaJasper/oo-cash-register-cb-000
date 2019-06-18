@@ -1,23 +1,18 @@
 class CashRegister
-  attr_accessor :quantity, :price, :discount, :item
+  attr_accessor :total, :discount, :transaction
 
-  def initialize(total = 0, discount = 20)
-    @total = total
+  def initialize(discount = 20)
+    @total = 0
     @discount = discount
+    @item = []
+    @transaction = []
   end
 
-  def total
-    @total
-  end
-
-  def discount
-    @discount
-  end
-
-  def add_item(item, price)
-
-    def cash_register
-      cash_register.total = 100
+  def add_item(title,price,qty=1)
+    self.total += pice * quantity
+    @transaction << self.total
+    qty.times do |item|
+      @items << title
     end
 
   end
