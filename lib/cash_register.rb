@@ -32,3 +32,4 @@ class CashRegister
     self.total = @total -@transation[@transation.length - 1]
   end
 end
+end
