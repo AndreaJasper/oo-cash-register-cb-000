@@ -9,7 +9,7 @@ class CashRegister
   end
 
   def add_item(title,price,qty=1)
-    self.total += pice * quantity
+    self.total += pice * qty
     @transaction << self.total
     qty.times do |item|
       @items << title
